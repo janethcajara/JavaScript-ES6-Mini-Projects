@@ -1,10 +1,9 @@
-// Starter data
 const students = [
   { name: "Anna", grade: 92 },
   { name: "Ben", grade: 78 },
   { name: "Clara", grade: 88 },
   { name: "David", grade: 84 },
-  { name: "Ella" } // no grade, should use default
+  { name: "Ella" } // no grade, will use default
 ];
 
 // 1. Display all student names in uppercase
@@ -21,11 +20,14 @@ topStudents.forEach(student => {
 });
 
 // 3. Calculate the average grade using reduce()
-const totalGrades = students.reduce((sum, student) => sum + (student.grade ?? 0), 0);
+const totalGrades = students.reduce(
+  (sum, student) => sum + (student.grade ?? 0),
+  0
+);
 const averageGrade = totalGrades / students.length;
-console.log(`Average grade: ${averageGrade.toFixed(2)}`);
+console.log(`\nAverage grade: ${averageGrade.toFixed(2)}`);
 
-// 4. Write a function displayStudent({name, grade}) with destructuring to return a formatted string
+// 4. Function to display student info with destructuring and default value
 function displayStudent({ name, grade = 0 }) {
   return `Student: ${name}, Grade: ${grade}`;
 }
