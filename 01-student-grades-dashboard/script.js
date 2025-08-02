@@ -11,12 +11,13 @@ const students = [
 function styleName(name, color) {
   return `<span style="color:${color}; font-weight:bold;">${name}</span>`;
 }
+function styleName1(name, color) {
+  return `<span style="color:${color}; font-weight:bold;">${name}</span>`;
+}
 
 // 1. Update student names using .map()
-const originalNames = students.map(student => student.name).join(' ');
-const updatedNamesHTML = students
-  .map(student => `<strong style="color:blue;">${student.name.toUpperCase()}</strong>`)
-  .join(' ');
+const originalNames = students.map(student => `<strong style="color:violet;">${student.name}</strong>`).join(' ');
+const updatedNamesHTML = students .map(student => `<strong style="color:blue;">${student.name.toUpperCase()}</strong>`).join(' ');
 
 // Insert the updated names into the HTML
 document.getElementById('task1-names').innerHTML = updatedNamesHTML;
