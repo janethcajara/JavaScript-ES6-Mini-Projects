@@ -14,7 +14,7 @@
 
     // 1. Update student names using .map()
     const originalNames = students
-      .map(student => `<strong style="color:violet;">${student.name}</strong>`)
+      .map(student => `<strong style="color:Green;">${student.name}</strong>`)
       .join(' ');
     
     const updatedNamesHTML = students
@@ -42,8 +42,8 @@
     );
     const averageGrade = totalGrades / students.length;
 
-    // Insert into HTML
-    document.getElementById('task3-value').textContent = averageGrade.toFixed(2);
+    // Insert the average grade with color styling
+    document.getElementById('task3-value').innerHTML = `<span style="color:violet;">${averageGrade.toFixed(2)}</span>`;
 
     // 4. Display each student info with destructuring and default
     const studentDetailsHTML = students
