@@ -3,40 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <title>Student Grades Dashboard</title>
-  <style>
-    
-    pre {
-      font-size: 25px;
-    }
-  </style>
 </head>
 <body>
   <h1>Student Grades Dashboard</h1>
-  
 
-  <h2>1. Update student names using .map()</h2>
-  <pre id="task1">
-    <strong>Original student names: <span id="task1-original-names"></span></strong><br>
-    <strong>Updated student names:</strong> <span id="task1-updated-names"></span>
-  </pre>
-  
-
-  <h2>2. Filter students with grades above 85 using .filter()</h2>
-  <pre id="task2">
-    <strong>Students with grades above 85:</strong> <span id="task2-list"></span>
-  </pre>
-  
-
-  <h2>3. Average grade using .reduce()</h2>
-  <pre id="task3">
-    <strong>Average Grade:</strong> <span id="task3-value"></span>
-  </pre>
-  
-
-  <h2>4. Display each student using destructuring and default</h2>
-  <pre id="task4">
-    <span id="task4-list"></span>
-  </pre>
+  <div>
+    <h3>1. Display all student names in uppercase using .map().</h3>
+    <h3>Original Names:</h3>
+    <p id="original-names"></p>
+  </div>
+  <div>
+    <h3>Uppercase Names:</h3>
+    <p id="updated-names"></p>
+  </div>
+  <div>
+    <h3>2. Filter and display students with grade ≥ 85 using .filter().</h3>
+    <h3>Students with Grade ≥ 85:</h3>
+    <p id="filtered-students"></p>
+  </div>
+  <div>
+    <h3>3. Calculate the average grade using `reduce()`.</h3>
+    <h3>Average Grade:</h3>
+    <p id="average-grade"></p>
+  </div>
+  <div>
+    <h3>4. Write a function `displayStudent({name, grade})` using destructuring to return a formatted string.</h3>
+    <h3>All Students Display:</h3>
+    <pre id="display-students"></pre>
+  </div>
 
   <script src="script.js"></script>
 </body>

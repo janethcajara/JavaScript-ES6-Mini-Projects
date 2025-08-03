@@ -17,6 +17,11 @@ filteredMovies.forEach(movie => {
   filteredListElement.appendChild(li);
 });
 
+filteredListElement.style.fontSize = "1.1rem";
+filteredListElement.style.color = "blue";
+filteredListElement.style.fontWeight = "bold";
+filteredListElement.style.fontFamily = "Times New Roman";
+
 // 2. Create a list of movie titles in the specified format
 const formattedMovies = movies.map(movie => `"${movie.title} (${movie.genre}) - ${movie.rating} ⭐"`);
 
@@ -27,6 +32,11 @@ formattedMovies.forEach(movieStr => {
   li.textContent = movieStr;
   formattedListElement.appendChild(li);
 });
+
+formattedListElement.style.fontSize = "1.1rem";
+formattedListElement.style.color = "green";
+formattedListElement.style.fontWeight = "bold";
+formattedListElement.style.fontFamily = "Times New Roman";
 
 // 3. Create the recommend function
 function recommend(movie, minRating = 8) {
@@ -43,7 +53,14 @@ function showRecommendations(movies, minRating = 8) {
     p.textContent = `"${movie.title}" is ${isRecommended ? 'recommended' : 'not recommended'} (Rating: ${movie.rating})`;
     resultsDiv.appendChild(p);
   });
+
+resultsDiv.style.fontSize = "1.1rem";
+resultsDiv.style.color = "red";
+resultsDiv.style.fontWeight = "bold";
+resultsDiv.style.fontFamily = "Times New Roman";
+
 }
 
 // Call the function to display recommendations
 showRecommendations(movies);
+
