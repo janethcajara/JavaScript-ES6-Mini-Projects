@@ -2,10 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Object Analyzer</title>
+  <title>Object Property Analyzer</title>
+
 </head>
 <body>
   <h1>Object Property Analyzer</h1>
+
+  <div>
+    <h2>1. Enabled Settings:</h2>
+    <p id="enabled-settings" class="output"></p>
+  </div>
+
+  <div>
+    <h2>2. Count of Settings Set to True:</h2>
+    <p id="count-true" class="output"></p>
+  </div>
+
+  <div>
+    <h2>3. Filtered Settings Array (only true values):</h2>
+    <pre id="filtered-settings-array" class="output"></pre>
+  </div>
+
+  <div>
+    <h2>4. Filtered Settings Object (reconstructed):</h2>
+    <pre id="filtered-settings-object" class="output"></pre>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
